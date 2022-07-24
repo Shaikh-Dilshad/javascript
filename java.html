@@ -8,29 +8,34 @@
     <title>Document</title>
 </head>
 c <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
-    .container{
+
+    .container {
         border: 2px solid red;
         background: cyan;
         margin: 3px 0px;
         padding: 5px;
     }
-    .background{
+
+    .background {
         background-color: black;
     }
-    .text{
+
+    .text {
         color: white;
     }
-    .power{
+
+    .power {
         background: black;
         border: 2px solid red;
         color: white;
         padding: 9px;
     }
 </style>
+
 <body>
     <h1>this new start of javascript</h1>
     <div id="firstcontainer" class="container">
@@ -39,11 +44,11 @@ c <style>
         <p id="demo"></p> -->
         <!-- <button id="click" onclick="this.innerHTML=Date()">click me</button> -->
     </div>
-    <div id = "asifa" class="container">
+    <div id="asifa" class="container">
         <button id="fatima" onclick="clickedd()">to know</button>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laborum!</p>
     </div>
-    <div id = "dil" class="container">
+    <div id="dil" class="container">
         <p>power this society is never change and i will be keep learning</p>
     </div>
     <script>
@@ -154,12 +159,12 @@ c <style>
         //     console.log("your are old")
         // }
         var arr = [1, 2, 3, 4, 5, 6];
-        for(var i=0;i<arr.length;i++){
+        for (var i = 0; i < arr.length; i++) {
             // if(i == 3){
             //     // break;
             //     // continue
             // }
-        // console.log(arr[i])
+            // console.log(arr[i])
         }
         // arr.forEach(function(element){
         //     console.log(element) 
@@ -176,99 +181,146 @@ c <style>
         //     console.log(arr[j]);
         //      j++;
         // }while(j<arr.length);
-      let myArr = ["new", "power", 34, "null","anime"];
-    //   myArr.push("power");
-    // myArr.shift();
-    // myArr.pop();
-    // const newline = myArr.unshift("power");
-    // console.log(newline);
-    //   console.log(myArr);
-     let myString = "This is a new string";
-    //  console.log(myString.length)
-    //   console.log(myString.indexOf("new"))
-    // d = myString.replace("This", "We");
-    // d = d.replace("new", "old")
-    // console.log(d, myString);
-     
-    // let myDate = new Date();
-    // console.log(myDate.getTime());
-    // console.log(myDate.getSeconds());
-    // console.log(myDate.getDay());
+        let myArr = ["new", "power", 34, "null", "anime"];
+        //   myArr.push("power");
+        // myArr.shift();
+        // myArr.pop();
+        // const newline = myArr.unshift("power");
+        // console.log(newline);
+        //   console.log(myArr);
+        let myString = "This is a new string";
+        //  console.log(myString.length)
+        //   console.log(myString.indexOf("new"))
+        // d = myString.replace("This", "We");
+        // d = d.replace("new", "old")
+        // console.log(d, myString);
 
-    // dom ,amanipilation
-  let elem = document.getElementById("click")
-//   console.log(elem);
+        // let myDate = new Date();
+        // console.log(myDate.getTime());
+        // console.log(myDate.getSeconds());
+        // console.log(myDate.getDay());
 
-    let elemClass = document.getElementsByClassName("container");
-    // console.log(elemClass);
-//targeting    // elemClass[0].style.background = "yellow"
-     //adding class in elements
-    elemClass[0].classList.add("background")
-    elemClass[0].classList.add("text")
-    // removing class in elements
-    // elemClass[0].classList.remove("background")
+        // dom ,amanipilation
+        let elem = document.getElementById("click")
+        //   console.log(elem);
 
-    // finding any elements inner html
-    // console.log(elemClass[0].innerHTML);
-    // console.log(elemClass[0].innerText);
-    tn = document.getElementsByTagName("div")
-    console.log(tn);
-    //aappenchild
-    createdElement = document.createElement('p');
-    createdElement.innerText = "this is new dream";
-     tn[0].appendChild(createdElement);
+        let elemClass = document.getElementsByClassName("container");
+        // console.log(elemClass);
+        //targeting    // elemClass[0].style.background = "yellow"
+        //adding class in elements
+        elemClass[0].classList.add("background")
+        elemClass[0].classList.add("text")
+        // removing class in elements
+        // elemClass[0].classList.remove("background")
 
-     dilshad = document.createElement('p');
-     dilshad.innerText = "This is new form new build";
-     tn[1].appendChild(dilshad);
-     //remove child
-    //  tn[1].removeChild(dilshad);
+        // finding any elements inner html
+        // console.log(elemClass[0].innerHTML);
+        // console.log(elemClass[0].innerText);
+        tn = document.getElementsByTagName("div")
+        console.log(tn);
+        //aappenchild
+        createdElement = document.createElement('p');
+        createdElement.innerText = "this is new dream";
+        tn[0].appendChild(createdElement);
 
-     zeeshan = document.createElement("p")
-      zeeshan.innerText = "This is new line"
-      tn[2].appendChild(zeeshan);
-      //replacechild 
-      zeeshan2 = document.createElement('b')
-      zeeshan2.innerText = "This is a bold";
-      tn[2].replaceChild(zeeshan2 , zeeshan);
+        dilshad = document.createElement('p');
+        dilshad.innerText = "This is new form new build";
+        tn[1].appendChild(dilshad);
+        //remove child
+        //  tn[1].removeChild(dilshad);
+
+        zeeshan = document.createElement("p")
+        zeeshan.innerText = "This is new line"
+        tn[2].appendChild(zeeshan);
+        //replacechild 
+        zeeshan2 = document.createElement('b')
+        zeeshan2.innerText = "This is a bold";
+        tn[2].replaceChild(zeeshan2, zeeshan);
+
+        //selecting querry
+        //   sel = document.querySelector('.container')
+        //   console.log(sel)
+        //   sel = document.querySelectorAll(".container")
+        //   console.log(sel)
+        //    sel = document.querySelector(".container")
+        //    sel.querySelector("p").style.backgroundColor = 'green'
+        //    sel = document.querySelectorAll('p')
+        //    for(i=0;i<sel.length;i++){
+        //     sel[i].style.backgroundColor = 'red';
+        //    }
+
+        // event in javascript
+        //     function clicked(){
+        //         console.log("This is clicked")
+        //     }
+        //   function clickedd(){
+        //     console.log("MY NAME IS DILSHAD TRYINNG TO LEARN")
+        //   }
+        //    firstcontainer.addEventListener('click', function(){
+        //     document.querySelectorAll(".container")[1].innerHTML = "<b> we changed into bold"
+        // console.log("This was clicked")
+        //    })
+        // asifa.addEventListener('click', function(){
+        //     document.querySelectorAll(".container")[2].innerHTML = "<b> we jumped to third"
+        //     console.log("mouseout will go in and shows")
+        // })
+        // dil.addEventListener("mouseout", function(){
+        //     console.log("mouseout will go out and shows")
+        // }
+        // firstcontainer.addEventListener('mouseup', function(){
+        //     console.log("This is clicked")
+
+        // })
+        // firstcontainer.addEventListener("mousedown", function(){
+        //     console.log("This is down ")
+        // })
+        // )
+        // let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+        //    firstcontainer.addEventListener('mouseup', function(){
+        // document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+        // console.log("mousup after clicking will shows")
+        //    })
+        //    firstcontainer.addEventListener('mousedown', function(){
+        //     document.querySelectorAll(".container")[1].innerHTML = "<b> we jumped to third </b>"
+        //     console.log("mousedown after releasing clicking will shows")
+        //    })
+
+        //arrow function
+        // 1. normal function
+        // function summ(a,b){
+        //     return a + b;
+        // }
+        //2.  arrow function
+        summ = (a, b) => {
+            return a + b;
+        }
+        // settimeout 
+        logkaro = () => {
+            document.querySelectorAll('.container')[1].innerHTML = "<b>This is set timeout</b>"
+            console.log("this is setTimeout")
+        }
+     // to cancel settimeout/setinterval we use cleaarTimeout(clr)/clerInterval(clr)
+     //only one execcuted
+    //  setTimeout(logkaro, 2000)
+    //infinnite executed
+        // CLR = setInterval(logkaro, 2000); 
+        // json in javascript
+        // stringify convert object into json string
+        // obj = {name:"Dilshad",length:1,a:{"the":"that"}}
+        // jso = JSON.stringify(obj)
+        // console.log(typeof jso)
+        // console.log(jso)
+       // parse convert json string into javascript object
+    //    Parsed = JSON.parse('{name:"Dilshad",length:1,a:{"the":"that"}}');
+    //    console.log(Parsed);
+
+
+
+
+
        
-      //selecting querry
-    //   sel = document.querySelector('.container')
-    //   console.log(sel)
-    //   sel = document.querySelectorAll(".container")
-    //   console.log(sel)
-    //    sel = document.querySelector(".container")
-    //    sel.querySelector("p").style.backgroundColor = 'green'
-    //    sel = document.querySelectorAll('p')
-    //    for(i=0;i<sel.length;i++){
-    //     sel[i].style.backgroundColor = 'red';
-    //    }
-  
-    // event in javascript
-    function clicked(){
-        console.log("This is clicked")
-    }
-  function clickedd(){
-    console.log("MY NAME IS DILSHAD TRYINNG TO LEARN")
-  }
-   firstcontainer.addEventListener('click', function(){
-    document.querySelectorAll(".container")[1].innerHTML = "<b> we changed into bold"
-console.log("This was clicked")
-   })
-//    firstcontainer.addEventListener('mouseup', function(){
-// console.log("mousup after clicking will shows")
-//    })
-//    firstcontainer.addEventListener('mousedown', function(){
-// console.log("mousedown after releasing clicking will shows")
-//    })
-asifa.addEventListener('click', function(){
-    document.querySelectorAll(".container")[2].innerHTML = "<b> we jumped to third"
-    console.log("mouseout will go in and shows")
-})
-// dil.addEventListener("mouseout", function(){
-//     console.log("mouseout will go out and shows")
-// }
-// )
+      
+
     </script>
 </body>
 
