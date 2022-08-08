@@ -19,11 +19,8 @@ body {
 }
 
 .raw {
-    width: 20%;
+    width: 400px;
     color: white;
-    position: absolute;
-    top: 27%;
-    left: 70%;
     background: rgba(90, 85, 85, 0.397);
     padding: 30px;
     border-radius: 12px;
@@ -31,8 +28,9 @@ body {
 }
 
 nav {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
+    /* position:  fixed; */
 
 }
 
@@ -56,7 +54,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: red;
-    background-color: white;
+     border: 1px solid white;
 }
 
 .raw h1 {
@@ -70,68 +68,62 @@ nav ul li a:hover {
 }
 
 .text {
-    display: flex;
-    position: relative;
-    flex-direction: column;
     color: white;
-    width: 35%;
-    margin-top: 240px;
-    margin-left: 32px;
     font-size: 19px;
     text-transform: uppercase;
 }
-.loader{
+.nav {
+    padding: 20px 20px 20px 20px;
+}
+.Main {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+	margin-top: 100px;
 }
-.anime{
-    position: relative;
-    color: white;
-    font-size: 25px;
-    text-transform: uppercase;
-    animation: fade 4s linear 3s infinite;
+.InnerMain {
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
-@keyframes fade{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+#typing {
+	width: 0;
+	color: white;
+	float: left;
+	font-weight:bold;
+	font-size: 35px;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 5s steps(22) 1s infinite alternate;
 }
-/* .anime::after{
-    content: "";
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    background: red;
-    animation: type 0.8s steps(4) infinite;
-}
-@keyframes type{
-    0%,75%{
-        opacity: 0;
-    }
-    76%,100%{
-        opacity: 1;
-    }
+#typing span{
+color:red;}
 
+#anime {
+	float: left;
+	color: white;
+	font-weight:bold;
+	font-size: 35px;
+	animation: anime 0.5s linear 0s  infinite;
 }
-.anime{
-    position: relative;
-    color: white;
-    font-size: 25px;
-    text-transform: uppercase;
-    animation: anime 8s linear infinite;
-    overflow: hidden;
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
 }
-@keyframes anime{
-    0%,10%,100%{
-        width: 0;
-    }
-    70%,90%{
-        width: 504px;
-    }
-} */
+@keyframes anime {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 .box {
     width: 100%;
     border-bottom: 2px solid white;
@@ -171,4 +163,86 @@ nav ul li a:hover {
 .btn:hover {
     background: white;
     color: black;
+}
+
+.about{
+    display: flex;
+    color: white;
+    /* width: 50%; */
+    /* flex-direction: column;    */
+}
+p{
+    width: 50%;
+}
+.content{
+display: flex;
+width: 50%;
+justify-content: center;
+}
+.cont{
+    display: flex;
+}
+.load{
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animated  5s steps(10) 1s infinite alternate;
+}
+.mark{
+     font-weight: bold;
+    animation: blinkk 0.5s linear 0s infinite;
+}
+@keyframes animated {
+	from {
+		width: 0;
+	}
+	to {
+		width: 54%;
+	}
+}
+@keyframes blinkk {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.third{
+    display: flex;
+}
+.contact{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.img img{
+    width: 70%;
+}
+.buy{
+    position: relative;
+    display: flex;
+    margin-top: 24px;
+    margin-right: 132px;
+} 
+
+.another{
+    margin: auto;
+background: #15bdffba;
+padding: 8px;
+line-height: 28px;
+border-radius: 10px;
+}
+
+.buy h1{
+    width: auto;
+     display: inline-block;
+    color: white;
+    text-align: center;
+}
+.another:hover{
+    cursor: pointer;
+     background: black;
+    border: 1px solid white;
 }
